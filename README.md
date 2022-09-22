@@ -101,7 +101,7 @@ test
 >
 > <code>PROJECT_NAME</code> – имя проекта для отчёта в Telegram.
 
-## <img width="4%" title="Jenkins" src="images/logo/Jenkins.svg"> Главная страница сборки [Jenkins](https://jenkins.autotests.cloud/job/012-SergeevSS90-unit13-Wildberries_tests/)
+## <img width="4%" title="Jenkins" src="images/logo/Jenkins.svg"> Главная страница сборки [Jenkins](https://jenkins.autotests.cloud/job/012-IvanSidorenko-12_13_Jenkins2_Axamit/)
 
 <p align="center">
   <img src="images/screenshots/Jenkins.PNG">
