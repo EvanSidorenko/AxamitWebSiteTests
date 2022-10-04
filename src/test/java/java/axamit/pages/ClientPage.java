@@ -12,11 +12,15 @@ public class ClientPage {
     private final SelenideElement allTab = $("a[class=\"axamit-client-filter-item active\"]");
 
     public void hoverOnCompanyTab() {
+
         companyTab.hover();
     }
+
     public void clickOnClientsField() {
+
         clientField.click();
     }
+
     public void checkAllTabIsDisplayed() {
         allTab.shouldBe(Condition.visible);
     }

@@ -1,8 +1,8 @@
 package java.axamit.helpers;
 
-import axamit.config.Credentials;
 import com.codeborne.selenide.Configuration;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import java.axamit.config.Credentials;
 
 public class DriverSettings {
     public static void configure() {

@@ -1,14 +1,13 @@
 package java.axamit.tests;
 
-import axamit.helpers.DriverUtils;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
-import static axamit.tests.TestData.*;
+import java.axamit.helpers.DriverUtils;
 import static io.qameta.allure.Allure.step;
+import static java.axamit.tests.TestData.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class WebTests extends TestBase {
+public class CriticalPathWebTests extends TestBase {
 
     @Test
     @DisplayName("Check there is no errors in console")
@@ -46,29 +45,29 @@ public class WebTests extends TestBase {
             searchResultPage.checkSearchResults(searchResult);
         });
     }
-        @Test
-        @DisplayName("Check a job  \"Junior Java/AEM Developer\" is displayed in the career page")
-        void checkAJobIsDisplayedInCareerPage() {
-            step("Click on the career tab", () -> {
-                jobPage.clickOnCareerTab();
-            });
-            step("Check the job is displayed in the accordion", () -> {
-                jobPage.checkTheJobInAccordion(accordionData);
-            });
-        }
 
-            @Test
-            @DisplayName("Check the All tab is displayed in the clients page")
-            void checkTheAllTabIsDisplayedInTheClientsPage(){
-                step("Hover on the company tab", () -> {
-                    clientPage.hoverOnCompanyTab();
-                });
-                step("Click on the Client field", () -> {
-                    clientPage.clickOnClientsField();
-                });
-                step("Check the All tab is visible", () -> {
-                    clientPage.checkAllTabIsDisplayed();
-                });
-            }
+    @Test
+    @DisplayName("Check a job  \"Junior Java/AEM Developer\" is displayed in the career page")
+    void checkAJobIsDisplayedInCareerPage() {
+        step("Click on the career tab", () -> {
+            jobPage.clickOnCareerTab();
+        });
+        step("Check the job is displayed in the accordion", () -> {
+            jobPage.checkTheJobInAccordion(accordionData);
+        });
+    }
 
+    @Test
+    @DisplayName("Check the All tab is displayed in the clients page")
+    void checkTheAllTabIsDisplayedInTheClientsPage() {
+        step("Hover on the company tab", () -> {
+            clientPage.hoverOnCompanyTab();
+        });
+        step("Click on the Client field", () -> {
+            clientPage.clickOnClientsField();
+        });
+        step("Check the All tab is visible", () -> {
+            clientPage.checkAllTabIsDisplayed();
+        });
+    }
 }

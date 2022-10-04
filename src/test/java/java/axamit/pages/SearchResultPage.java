@@ -11,8 +11,19 @@ public class SearchResultPage {
     private final SelenideElement goButton = $("button[type=\"submit\"]");
     private final SelenideElement resultField = $("a[href=\"/blog/adobe/dispatcher-1\"]");
 
-    public void clickOnSearchButton() {searchButton.click();}
-    public void inputDataInSearchField(String searchData) {searchField.setValue(searchData);}
-    public void clickOnGoButton() {goButton.click();}
-    public void checkSearchResults(String searchResult) {resultField.shouldHave(Condition.text(searchResult));}
+    public void clickOnSearchButton() {
+        searchButton.click();
+    }
+
+    public void inputDataInSearchField(String searchData) {
+        searchField.setValue(searchData);
+    }
+
+    public void clickOnGoButton() {
+        goButton.click();
+    }
+
+    public void checkSearchResults(String searchResult) {
+        resultField.shouldHave(Condition.text(searchResult));
+    }
 }

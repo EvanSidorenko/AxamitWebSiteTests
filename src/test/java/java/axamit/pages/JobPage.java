@@ -16,5 +16,4 @@ public class JobPage {
     public void checkTheJobInAccordion(String accordionData) {
         accordion.shouldHave(Condition.text(accordionData));
     }
-
 }

@@ -1,17 +1,16 @@
 package java.axamit.tests;
 
-import axamit.helpers.Attach;
-import axamit.helpers.DriverSettings;
-import axamit.pages.ClientPage;
-import axamit.pages.JobPage;
-import axamit.pages.MainPage;
-import axamit.pages.SearchResultPage;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
-
+import java.axamit.helpers.Attach;
+import java.axamit.helpers.DriverSettings;
+import java.axamit.pages.ClientPage;
+import java.axamit.pages.JobPage;
+import java.axamit.pages.MainPage;
+import java.axamit.pages.SearchResultPage;
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
@@ -19,7 +18,6 @@ import static io.qameta.allure.Allure.step;
 public class TestBase {
     MainPage mainPage = new MainPage();
     SearchResultPage searchResultPage = new SearchResultPage();
-
     JobPage jobPage = new JobPage();
     ClientPage clientPage = new ClientPage();
     @BeforeAll
